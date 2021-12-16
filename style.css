@@ -6,7 +6,7 @@
 .prev,
 .next{
     position: relative;
-    right: -770px;
+    right: -113%;
     width: 40px;
     height: 40px;
     line-height: 35px;
@@ -20,12 +20,12 @@
     vertical-align: middle;
 }
 .prev{
-    bottom: 400px;
+    bottom: 405px;
 }
 .next{
     top:-90px;
 }
-.prev:active,
+ .prev:active,
 .next:active{
     filter: opacity(0.5);
 }
@@ -35,10 +35,13 @@
 }
 .item{
     display: none;
-    height: 70vh;
+    height: 414px;
     overflow: hidden;
 }
 .item.active {
+    display: block;
+}
+.text.active {
     display: block;
 }
 .item img{
