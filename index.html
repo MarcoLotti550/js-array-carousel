@@ -16,8 +16,8 @@
                         <img :src="elem">
                     </div>
                 </div>
-                <div v-show="(corrente >= 0)" class="prev" @click="next"> &rarr; </div>
-                <div v-show="(corrente >= 0)" class="next" @click="prev"> &larr; </div>
+                <div v-show="(corrente >= 0)" class="next" @click="next"> &rarr; </div>
+                <div v-show="(corrente >= 0)" class="prev" @click="prev"> &larr; </div>
                 <div class="circles-container">
                     <div v-for="(elem, index) in imagesArray" class="circle" :class="iscorrente(index)" @click="corrente = index"></div>
                 </div>
