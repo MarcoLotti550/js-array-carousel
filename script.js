@@ -10,6 +10,25 @@ let app = new Vue({
             'img/05.jpg'
         ]
     },
-
+    methods: {
+        iscorrente: function(indeximages){
+            if(indeximages == this.corrente){
+                return "active";
+            }
+            return "";
+        },
+        next: function () {
+            this.corrente ++;
+            if (this.corrente == this.imagesArray.length) {
+                this.corrente = 0;
+            }
+        },
+        prev: function () {
+            this.corrente --;
+            if (this.corrente < 0) {
+                this.corrente = this.imagesArray.length - 1;
+            }
+        }
+    },
 
 });
