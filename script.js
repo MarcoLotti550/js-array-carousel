@@ -8,7 +8,7 @@ let app = new Vue({
             'img/03.jpg',
             'img/04.jpg',
             'img/05.jpg'
-        ]
+        ],
     },
     methods: {
         iscorrente: function(indeximages){
@@ -28,7 +28,6 @@ let app = new Vue({
             if (this.corrente < 0) {
                 this.corrente = this.imagesArray.length - 1;
             }
-        }
+        },
     },
-
 });
